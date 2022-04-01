@@ -4,7 +4,9 @@
 }
 
 body {
-
+background-color:black;
+font-size: 15px;
+font-family: 'Lexend Deca', sans-serif;
 }
 
 main {
@@ -24,34 +26,178 @@ main {
 }
 
 div {
-    border: 1px solid black;
     width:33.33%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
 }
 
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    color: white;
+}
+
+    .container h1, p, button {
+        margin: 0 0 10% 5%;
+    }
+
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size:2.5rem;
+    }
+
 .image-container {
+    margin: 15% 5%;
     width: 100%;
     height: auto
 }
 
 p {
-    width: 80%;
+    width: 85%;
+    line-height: 2;
 }
+
+button {
+    width: 55%;
+    height: 10%;
+    border-radius: 25px;
+    border: solid 2px white;
+    margin-top:25%;
+}
+
 #sedan {
 background-color:hsl(31, 77%, 52%);
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
 }
 
+#sedan button {
+    background-color:white;
+    color:hsl(31, 77%, 52%);
+}
+
+#sedan button:hover {
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+}
+
 #suv {
     background-color:hsl(184, 100%, 22%);
+}
+
+#suv button {
+    background-color:white;
+    color:hsl(184, 100%, 22%);
+}
+
+#suv button:hover {
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
 }
 
 #luxury {
     background-color:hsl(179, 100%, 13%);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+#luxury button {
+    background-color:white;
+    color:hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+
+
+    button {
+        margin-top:5%;
+    }
+
+    #luxury button {
+        margin-top:0;
+
+    }
+
+    #luxury p {
+        margin-bottom:0;
+    }
+}
+
+@media only screen and (max-width: 986px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+        height: 75%;
+        margin-top: 5%;
+    }
+
+    #sedan {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    #luxury {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    div {
+        width:100%;
+        height: 100%;
+    
+    }
+    button {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+        height: 75%;
+        margin-top: 10%;
+    }
+
+    .container {
+        height:70%;
+    }
+
+    P {
+        font-size: 15px;
+    }
+
+    #sedan {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    #luxury {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    div {
+        width:100%;
+        height: 100%;
+    
+    }
+
+    button {
+        margin-top: 10%;
+        font-size: 15px;
+    }
 }
