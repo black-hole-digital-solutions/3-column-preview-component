@@ -43,7 +43,7 @@ div {
 
     h1 {
         font-family: 'Big Shoulders Display', cursive;
-        font-size:2.5rem;
+        font-size:3.5rem;
     }
 
 .image-container {
@@ -53,14 +53,16 @@ div {
 }
 
 p {
+    height: 300px;
     width: 85%;
+    font-size: 1.2rem;
     line-height: 2;
 }
 
 button {
     width: 55%;
     height: 10%;
-    border-radius: 25px;
+    border-radius: 35px;
     border: solid 2px white;
     /* margin-top:25%; */
     /* bottom: 0px; */
@@ -128,7 +130,7 @@ border-bottom-left-radius: 15px;
     }
 
     #luxury p {
-        margin-bottom:0;
+        /* margin-bottom:0; */
     }
 }
 
@@ -183,7 +185,8 @@ border-bottom-left-radius: 15px;
     }
 
     P {
-        font-size: 15px;
+        font-size: 18px;
+        height: 225px;
     }
 
     #sedan {
@@ -203,7 +206,7 @@ border-bottom-left-radius: 15px;
     }
 
     button {
-        margin-top: 10%;
-        font-size: 15px;
+        font-size:18px;
     }
+    
 }
