@@ -163,12 +163,13 @@ border-bottom-left-radius: 15px;
     }
     button {
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 5px;
+        height: 100px;
     }
 }
 
